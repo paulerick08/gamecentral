@@ -1,0 +1,181 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content .tab-switch .onoffswitch {
+  position: relative;
+  width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.content .tab-switch .onoffswitch-checkbox {
+  display: none;
+}
+
+.content .tab-switch .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.content .tab-switch .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.content .tab-switch .onoffswitch-inner:before,
+.content .tab-switch .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 3px;
+}
+
+.content .tab-switch .onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 20px;
+  background-color: #3D871F;
+  color: #ffffff;
+  height: 35px;
+}
+
+.content .tab-switch .onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 20px;
+  background-color: #e3342f;
+  color: #ffffff;
+  text-align: right;
+  height: 35px;
+}
+
+.content .tab-switch .onoffswitch-switch {
+  display: block;
+  width: 24px;
+  margin: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+.content .tab-switch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.content .tab-switch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.content .tab-switch input {
+  background-color: #0F2B75;
+  border: 1px solid #3448E5;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.content .tab-switch .addressInput {
+  width: 50%;
+}
+
+.content .tab-switch .authenticator {
+  width: 5%;
+  height: 40px;
+}
+
+.content .tab-switch .authenticator::-webkit-outer-spin-button,
+.content .tab-switch .authenticator::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.content .tab-switch button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834 10%, #F4CA52);
+  color: #46350D;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 7px 10px;
+}
+
+.content .tab-switch button img {
+  width: 18px;
+}
+
+.content .tab-switch button:hover {
+  color: #ffffff;
+}
+
+.content .tab-switch button:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.content .tab-switch input:focus,
+.content .tab-switch button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.content .tab-switch .qrCode {
+  border: 1px solid #131D72;
+  background-color: #041753;
+  border-radius: 8px;
+  padding: 30px;
+  width: 20%;
+}
+
+.content .tab-switch .qrCode img {
+  width: 100%;
+}
+
+@media (max-width: 801px) and (min-width: 601px) {
+  .content .tab-switch .authenticator {
+    width: 7%;
+  }
+
+  .content .tab-switch .qrCode {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .tab-switch .addressInput {
+    width: 70%;
+  }
+
+  .content .tab-switch .authenticator {
+    width: 12%;
+  }
+
+  .content .tab-switch .qrCode {
+    width: 60%;
+  }
+}
+

@@ -1,0 +1,232 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.content .title {
+  background: -webkit-gradient(linear, left top, right top, from(#060E32), color-stop(50%, transparent));
+  background: linear-gradient(to right, #060E32, transparent 50%);
+}
+
+.content .title .leftBorder {
+  width: 7px;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(#eb58f7));
+  background: linear-gradient(to top, red, #eb58f7);
+}
+
+.content .title .gwxLogo {
+  width: 22px;
+  height: 22px;
+}
+
+.content .title .eosLogo {
+  width: 17px;
+  height: 22px;
+  margin-right: 2px;
+}
+
+.content .title .fireIcon {
+  width: 17px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.content .title i {
+  font-size: 19px;
+}
+
+.content .title h6 {
+  color: #F4CA52;
+}
+
+.content .subContent .countdown .hours .time div,
+.content .subContent .countdown .minutes .time div,
+.content .subContent .countdown .seconds .time div {
+  background-color: #0C1659;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0.6;
+}
+
+.content .subContent .countdown .hours span,
+.content .subContent .countdown .minutes span,
+.content .subContent .countdown .seconds span {
+  font-size: 12px;
+}
+
+.content .subContent h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.content .subContent h4 {
+  font-size: 1.6rem !important;
+}
+
+.content .subContent button {
+  background: -webkit-gradient(linear, left top, right top, from(#ba9433), to(#F4CA52));
+  background: linear-gradient(to right, #ba9433, #F4CA52);
+  color: #46350D;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.content .subContent button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.content .subContent button:hover {
+  color: #ffffff;
+}
+
+.content .subContent .popup1,
+.content .subContent .popup2 {
+  border-radius: 4px;
+  border: none;
+  background: rgba(15, 43, 117, 0.5);
+  position: absolute;
+}
+
+.content .subContent .popup1 span,
+.content .subContent .popup2 span {
+  line-height: 1;
+  font-size: 12px;
+}
+
+.content .subContent .popup1 span a:hover,
+.content .subContent .popup2 span a:hover {
+  color: #F4CA52;
+}
+
+.content .subContent .popup1 {
+  top: -40px;
+}
+
+.content .subContent .popup2 {
+  top: 120px;
+}
+
+.content .subContent .popup1:after,
+.content .subContent .popup2:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 23px;
+  bottom: -20px;
+  border: 10px solid;
+  border-color: rgba(15, 43, 117, 0.5) rgba(15, 43, 117, 0.5) transparent transparent;
+}
+
+.content .subContent .fa-stack {
+  cursor: pointer;
+}
+
+.content .subContent .fa-stack .fa-circle {
+  color: #0F2B75;
+  font-size: 1.6em;
+}
+
+.content .subContent .fa-stack .question {
+  color: #ffffff;
+  font-size: 18px;
+  position: absolute;
+  left: 9px;
+  top: -2px;
+}
+
+.content .subContent .fa-stack:hover .popup,
+.content .subContent .fa-stack:hover .popup:after {
+  display: block;
+}
+
+.content .subContent .fa-stack:hover .fa-circle {
+  color: #F4CA52;
+}
+
+.content .subContent .fa-stack:hover .question {
+  color: #46350D;
+}
+
+.content .subContent img {
+  width: 100%;
+}
+
+.content .subContent .featured-games {
+  -webkit-box-flex: initial;
+          flex-grow: initial;
+  flex-basis: initial;
+  display: inline-block !important;
+  width: 25%;
+  font-weight: 500;
+}
+
+.content .subContent .featured-games a:hover {
+  text-decoration: none;
+}
+
+.content .subContent .popular-games {
+  -webkit-box-flex: initial;
+          flex-grow: initial;
+  flex-basis: initial;
+  display: inline-block !important;
+  width: 20%;
+  font-weight: 500;
+}
+
+.content .subContent .popular-games a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .sidebar .userInfo .diamond-border {
+    left: 37.2%;
+    top: -3.1rem;
+  }
+
+  .sidebar .userInfo .diamond {
+    left: 39%;
+    top: -2.7rem;
+  }
+
+  .sidebar .userInfo .settingsButton {
+    left: 55%;
+  }
+
+  #rightContent {
+    padding-left: 0;
+  }
+
+  .content {
+    margin-top: 2rem;
+  }
+
+  .content .subContent .featured-games {
+    width: 50%;
+  }
+
+  .content .subContent .popular-games {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 601px) {
+  .sidebar .userInfo .diamond-border {
+    left: 32%;
+  }
+
+  .content .subContent .popular-games {
+    width: 25%;
+  }
+}
+

@@ -1,0 +1,47 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    .title {
+        h4 {
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+    label {
+        font-weight: 500;
+    }
+    .toggleButton, .toggleButton2 {
+        input[type='radio'] {
+            -webkit-appearance: none;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            outline: none;
+            border: 3px solid #1F2C9E;
+            cursor: pointer;
+            background-color: $lighter-dark-blue;
+        }
+        input[type='radio']:checked {
+            background-color: $yellow;
+        }
+        span {
+            position: absolute;
+        }
+        img {
+            width: 13px;
+            top: 3px;
+        }
+    }
+    .toggleButton {
+        width: 90px;
+    }
+    .toggleButton2 {
+        width: 120px;
+    }
+}

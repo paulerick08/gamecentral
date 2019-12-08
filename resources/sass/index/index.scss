@@ -1,0 +1,153 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/index/bg.png') center top no-repeat;
+    background-color: $body-bg;
+}
+
+.banner-txt {
+    font-size: 3.75em;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 90px auto 0 auto;
+}
+
+.decentralized {
+    margin-top: 60px;
+    text-align: center;
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .eos-txt {
+        font-weight: 600;
+        font-size: 45px;
+    }
+}
+
+.separator {
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+}
+.hr-left, .hr-right {
+    line-height: 1em;
+    position: absolute;
+    outline: 0;
+    top: 0;
+    left: 0;
+    border: 0;
+    color: #000;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    width: 100%;
+}
+.hr-left:before {
+    content: "";
+    background: linear-gradient(90deg,transparent,$gold);
+    position: absolute;
+    left: 15%;
+    top: 1.7rem;
+    width: 20%;
+    height: 1px;
+}
+.hr-right:before {
+    content: "";
+    background: linear-gradient(90deg,$gold,transparent);
+    position: absolute;
+    right: 15.2%;
+    top: 1.7rem;
+    width: 20%;
+    height: 1px;
+}
+.hr-text {
+    position: relative;
+    display: block;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    text-align: center;
+    top: .5em;
+    font-weight: 600;
+    font-size:36px;
+    color: $gold;
+}
+
+.diamond-icons {
+    text-align: center;
+    img {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 170px;
+    }
+}
+
+.newest-games {
+    margin: 100px auto 0 auto;
+    .title {
+        font-weight: 500;
+        font-size:30px;
+        color: $gold;
+    }
+    .new-games {
+        flex-grow: initial;
+        flex-basis: initial;
+        display: inline-block !important;
+        width: 25%;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.categories {
+    .nav-tabs {
+        border-bottom: none;
+        .nav-item {
+            width: 25%;
+            text-align: center;
+            border-bottom: 1px solid #171B4C;
+            .nav-link {
+                font-weight: 600;
+                background: transparent;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                //border-bottom: 1px solid $dark-blue;
+                height: 100%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .nav-link:hover {
+                border-bottom: none;
+            }
+        }
+    }
+    .game {
+        flex-grow: initial;
+        flex-basis: initial;
+        display: inline-block !important;
+        width: 20%;
+    }
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: $blue-gray;
+    font-size: 17px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $gold;
+    font-size: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid $gold !important;
+}
+
+// Responsive
+@import 'responsive';

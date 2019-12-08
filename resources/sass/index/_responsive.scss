@@ -1,0 +1,51 @@
+@media(max-width: 992px) and (min-width: 601px){
+    .diamond-icons{
+        img {
+            width: 120px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .banner-txt{
+        font-size: 2.5em;
+    }
+    .decentralized {
+        img {
+            width: 25px;
+            height: 35px;
+        }
+        .eos-txt{
+            font-size: 20px;
+        }
+    }
+    .separator {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .diamond-icons{
+        img {
+            width: 120px;
+            margin-top: 25px;
+        }
+    }
+    .newest-games {
+        .new-games {
+            img {
+                width: 160px;
+            }
+            width: 50%;
+        }
+    }
+    .categories {
+        .game {
+            width: 50%;
+        }
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+        font-size: 14px;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        font-size: 16px;
+    }
+}

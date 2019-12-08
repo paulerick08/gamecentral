@@ -1,0 +1,164 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    .title {
+        h4 {
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+    .tab-switch {
+        .onoffswitch {
+            position: relative;
+            width: 90px;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select: none;
+        }
+        .onoffswitch-checkbox {
+            display: none;
+        }
+        .onoffswitch-label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+        }
+        .onoffswitch-inner {
+            display: block;
+            width: 200%;
+            margin-left: -100%;
+            transition: margin 0.3s ease-in 0s;
+        }
+        .onoffswitch-inner:before, .onoffswitch-inner:after {
+            display: block;
+            float: left;
+            width: 50%;
+            height: 30px;
+            padding: 0;
+            line-height: 30px;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding-top: 3px;
+        }
+        .onoffswitch-inner:before {
+            content: "ON";
+            padding-left: 20px;
+            background-color: $active-green;
+            color: $white;
+            height: 35px;
+        }
+        .onoffswitch-inner:after {
+            content: "OFF";
+            padding-right: 20px;
+            background-color: $red;
+            color: $white;
+            text-align: right;
+            height: 35px;
+        }
+        .onoffswitch-switch {
+            display: block;
+            width: 24px;
+            margin: 6px;
+            background: $white;
+            position: absolute; top: 0; bottom: 0;
+            right: 56px;
+            border-radius: 50%;
+            transition: all 0.3s ease-in 0s;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+            right: 0px;
+        }
+        input {
+            background-color: $lighter-dark-blue;
+            border: 1px solid $input-blue-border;
+            border-radius: 7px;
+            padding: 5px 10px;
+            color: $white;
+        }
+        .addressInput {
+            width: 50%;
+        }
+        .authenticator {
+            width: 5%;
+            height: 40px;
+        }
+        .authenticator::-webkit-outer-spin-button, .authenticator::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        button {
+            background: linear-gradient(to right, #BE9834 10%, $gold);
+            color: $dark-gold;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 7px 10px;
+            img {
+                width: 18px;
+            }
+        }
+        button:hover {
+            color: $white;
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        input:focus, button:focus {
+            box-shadow: none;
+            outline: none;
+        }
+        .qrCode {
+            border: 1px solid #131D72;
+            background-color: $qr-code-bg;
+            border-radius: 8px;
+            padding: 30px;
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 801px) and (min-width: 601px){
+    .content {
+        .tab-switch {
+            .authenticator {
+                width: 7%;
+            }
+            .qrCode {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .content {
+        .tab-switch {
+            .addressInput {
+                width: 70%;
+            }
+            .authenticator {
+                width: 12%;
+            }
+            .qrCode {
+                width: 60%;
+            }
+        }
+    }
+}

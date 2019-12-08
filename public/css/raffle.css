@@ -1,0 +1,142 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content {
+  background-image: url("/images/auth/lady-graphics.png");
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content .notification {
+  width: 27%;
+  margin-top: -6.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: linear-gradient(22deg, rgba(227, 53, 47, 0.65) 10%, rgba(202, 13, 209, 0.65));
+}
+
+.content .notification img {
+  width: 30px;
+}
+
+.content .notification span {
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  top: 14px;
+}
+
+.content .countdown {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.content .countdown .count-timer {
+  height: 67px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.content .countdown .count-timer .box {
+  height: inherit;
+  position: relative;
+}
+
+.content .countdown .count-timer .box:before {
+  content: attr(data-label);
+  position: absolute;
+  text-transform: uppercase;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+}
+
+.content .countdown .count-timer .box span {
+  display: inline-block;
+  height: inherit;
+  background-color: #0632ab;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.content .countdown .count-timer .box span:first-child {
+  margin-right: 8px;
+}
+
+.content h2 {
+  font-weight: 600;
+}
+
+.content .ratio {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.content .button-container {
+  background-image: linear-gradient(22deg, #e3342f 10%, #cb0dd1);
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 25px 10px;
+}
+
+.content .button-container .btn {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #b99318), to(#f7d154));
+  background-image: linear-gradient(to right, #b99318 20%, #f7d154);
+  border: 3px solid #E2B640;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 5px;
+  width: 82px;
+  height: 82px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #46350D;
+}
+
+.content .button-container .btn:not(:first-of-type) {
+  margin-left: 15px;
+}
+
+.content .tickets {
+  font-size: 17px;
+}
+
+.content .view-tickets {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content .view-tickets:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.content .text-xsmall {
+  font-weight: 600;
+}
+

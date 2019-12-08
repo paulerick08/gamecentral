@@ -1,0 +1,70 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content .screen img {
+  width: 100%;
+}
+
+.content .description .token div {
+  width: 50px;
+}
+
+.content .description .token input[type=radio] {
+  -webkit-appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  outline: none;
+  border: 3px solid #1F2C9E;
+  cursor: pointer;
+  background-color: #0F2B75;
+}
+
+.content .description .token input[type=radio]:checked {
+  background-color: #ffed4a;
+}
+
+.content .description .token span {
+  position: absolute;
+}
+
+.content .description h4 {
+  font-weight: 600;
+}
+
+.content .description small {
+  color: #888EA6;
+}
+
+.content .description .tracker {
+  background-color: #091250;
+}
+
+.content .description .tracker p {
+  font-size: 12px;
+}
+
+.content .description .tracker a {
+  font-size: 13px;
+}
+
+.content .description .tracker a:hover {
+  color: #F4CA52;
+}
+
+.content .description .seeMore {
+  color: #F4CA52;
+  font-size: 14px;
+}
+
+.content .description .seeMore:hover {
+  color: #F4CA52;
+}
+

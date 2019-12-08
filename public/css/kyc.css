@@ -1,0 +1,174 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content label {
+  font-weight: 600;
+}
+
+.content label span {
+  color: #888EA6;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.content input,
+.content select {
+  width: 100%;
+  background-color: #0F2B75;
+  border: 1px solid #3448E5;
+  border-radius: 7px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.content input[type=number]::-webkit-inner-spin-button,
+.content input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.content select {
+  display: block;
+  color: #ffffff;
+  line-height: 1.3;
+  width: 100%;
+  height: 46px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #3448E5;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #0F2B75;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  cursor: pointer;
+}
+
+.content select::-ms-expand {
+  display: none;
+}
+
+.content input:focus,
+.content select:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.content .select-id {
+  width: 32.5% !important;
+}
+
+.content .uploadId {
+  width: 32.5%;
+  border: 1px solid #3448E5;
+  height: 120px;
+}
+
+.content .uploadId .dasahedDiv {
+  border: dashed 1px #888EA6;
+  width: 100%;
+  height: 100%;
+}
+
+.content .uploadId .dasahedDiv .label,
+.content .uploadId .dasahedDiv .label2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  z-index: -1;
+  margin-left: 25px;
+}
+
+.content .uploadId .dasahedDiv .label {
+  margin-top: 40px;
+}
+
+.content .uploadId .dasahedDiv .label2 {
+  margin-top: 30px;
+}
+
+.content .uploadId .dasahedDiv input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.content .uploadedImage,
+.content .uploadedImage2 {
+  border: 1px solid #3448E5;
+}
+
+.content .uploadedImage button,
+.content .uploadedImage2 button {
+  background-color: #0F2B75;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+}
+
+.content .uploadedImage button img,
+.content .uploadedImage2 button img {
+  width: 15px;
+}
+
+.content .uploadedImage button:hover,
+.content .uploadedImage2 button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834, #F4CA52);
+}
+
+.content .uploadedImage .userImage,
+.content .uploadedImage2 .userImage {
+  width: 334px;
+  height: auto;
+  background-color: #00113F;
+}
+
+.content .uploadedImage button {
+  left: 29.5%;
+}
+
+.content .uploadedImage2 button {
+  left: 63.7%;
+}
+
+.content .max span {
+  font-size: 15px;
+}
+
+.content .submitButton {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834 10%, #F4CA52);
+  color: #46350D;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.content .submitButton:hover {
+  color: #ffffff;
+}
+
+.content button:focus {
+  box-shadow: none;
+  outline: none;
+}
+

@@ -1,0 +1,810 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.yellow-text {
+  color: #F4CA52;
+}
+
+.gray-text {
+  color: #888EA6;
+}
+
+.header-nav-div {
+  margin-top: 30px;
+}
+
+.header-nav-div nav {
+  width: 100%;
+}
+
+.header-nav-div nav .dropdown-menu {
+  background: #00113F;
+}
+
+.header-nav-div nav .dropdown-menu a:hover {
+  color: #ffffff !important;
+  background: -webkit-gradient(linear, left top, right top, from(#eb58f7), to(red));
+  background: linear-gradient(to right, #eb58f7, red);
+}
+
+.header-nav-div nav .header-nav-div-2 ul {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+
+.header-nav-div nav .header-nav-div-2 ul li {
+  display: inline-block;
+}
+
+.header-nav-div nav .signup {
+  border: 1px solid #F4CA52;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.header-nav-div nav .signup a {
+  color: #F4CA52;
+}
+
+.header-nav-div nav .signup:hover {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.header-nav-div nav .signup:hover a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.header-nav-div nav a,
+.header-nav-div nav .header-nav-div-2 ul a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.header-nav-div nav .header-nav-div-2 ul a:hover {
+  color: #F4CA52;
+}
+
+.header-nav-div nav .header-logo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  display: block;
+}
+
+.header-nav-div nav .header-logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header-nav-div .navbar-dark .navbar-nav .nav-item a:hover {
+  color: #F4CA52;
+}
+
+.header-nav-div .navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.header-nav-div .navbar-dark .navbar-nav .nav-link::after {
+  display: none;
+}
+
+.header-nav-div .navbar.transparent.navbar-dark .navbar-inner {
+  border-width: 0px;
+  box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.searchBar {
+  width: 20%;
+}
+
+.searchBar i {
+  position: absolute;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.searchBar input {
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: #0F2B75;
+  color: #ffffff;
+  padding: 10px 10px 10px 43px;
+}
+
+.searchBar input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.searchBar input::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.searchBar input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.searchBar input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.searchBar input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.searchBar input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#loginModal .modal-content,
+#signupModal .modal-content,
+#resetPasswordModal .modal-content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00113F), to(#131B6C));
+  background: linear-gradient(to top, #00113F, #131B6C);
+}
+
+#loginModal .modal-content .modal-header,
+#signupModal .modal-content .modal-header,
+#resetPasswordModal .modal-content .modal-header {
+  border-bottom: none;
+}
+
+#loginModal .modal-content .modal-header p,
+#signupModal .modal-content .modal-header p,
+#resetPasswordModal .modal-content .modal-header p {
+  color: #F4CA52;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#loginModal .modal-content .modal-header .close,
+#signupModal .modal-content .modal-header .close,
+#resetPasswordModal .modal-content .modal-header .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+#loginModal .modal-content .modal-header .close:focus,
+#signupModal .modal-content .modal-header .close:focus,
+#resetPasswordModal .modal-content .modal-header .close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#loginModal .modal-content .modal-body input,
+#signupModal .modal-content .modal-body input,
+#resetPasswordModal .modal-content .modal-body input {
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  background: transparent;
+  padding-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #2F3B61;
+}
+
+#loginModal .modal-content .modal-body input:focus,
+#signupModal .modal-content .modal-body input:focus,
+#resetPasswordModal .modal-content .modal-body input:focus {
+  box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+#loginModal .modal-content .modal-body input::-webkit-input-placeholder, #signupModal .modal-content .modal-body input::-webkit-input-placeholder, #resetPasswordModal .modal-content .modal-body input::-webkit-input-placeholder {
+  color: #888EA6;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-body input::-moz-placeholder, #signupModal .modal-content .modal-body input::-moz-placeholder, #resetPasswordModal .modal-content .modal-body input::-moz-placeholder {
+  color: #888EA6;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-body input:-ms-input-placeholder, #signupModal .modal-content .modal-body input:-ms-input-placeholder, #resetPasswordModal .modal-content .modal-body input:-ms-input-placeholder {
+  color: #888EA6;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-body input::-ms-input-placeholder, #signupModal .modal-content .modal-body input::-ms-input-placeholder, #resetPasswordModal .modal-content .modal-body input::-ms-input-placeholder {
+  color: #888EA6;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-body input::placeholder,
+#signupModal .modal-content .modal-body input::placeholder,
+#resetPasswordModal .modal-content .modal-body input::placeholder {
+  color: #888EA6;
+  opacity: 1;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-body input.error,
+#signupModal .modal-content .modal-body input.error,
+#resetPasswordModal .modal-content .modal-body input.error {
+  border-bottom: 1px solid #e3342f;
+}
+
+#loginModal .modal-content .modal-body a,
+#signupModal .modal-content .modal-body a,
+#resetPasswordModal .modal-content .modal-body a {
+  font-weight: 400;
+}
+
+#loginModal .modal-content .modal-body a:hover,
+#signupModal .modal-content .modal-body a:hover,
+#resetPasswordModal .modal-content .modal-body a:hover {
+  color: #F4CA52;
+}
+
+#loginModal .modal-content .modal-body .error,
+#signupModal .modal-content .modal-body .error,
+#resetPasswordModal .modal-content .modal-body .error {
+  background-color: #96201C;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+#loginModal .modal-content .modal-body .error a,
+#loginModal .modal-content .modal-body .error a:hover,
+#signupModal .modal-content .modal-body .error a,
+#signupModal .modal-content .modal-body .error a:hover,
+#resetPasswordModal .modal-content .modal-body .error a,
+#resetPasswordModal .modal-content .modal-body .error a:hover {
+  color: #F4CA52;
+}
+
+#loginModal .modal-content .modal-body .error a:hover,
+#signupModal .modal-content .modal-body .error a:hover,
+#resetPasswordModal .modal-content .modal-body .error a:hover {
+  text-decoration: underline;
+}
+
+#loginModal .modal-content .modal-body .error p,
+#signupModal .modal-content .modal-body .error p,
+#resetPasswordModal .modal-content .modal-body .error p {
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-footer,
+#signupModal .modal-content .modal-footer,
+#resetPasswordModal .modal-content .modal-footer {
+  border-top: none;
+}
+
+#loginModal .modal-content .modal-footer button,
+#signupModal .modal-content .modal-footer button,
+#resetPasswordModal .modal-content .modal-footer button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834 10%, #F4CA52);
+  color: #46350D;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+#loginModal .modal-content .modal-footer button:hover,
+#signupModal .modal-content .modal-footer button:hover,
+#resetPasswordModal .modal-content .modal-footer button:hover {
+  color: #ffffff;
+}
+
+#loginModal .modal-content .modal-footer button:focus,
+#signupModal .modal-content .modal-footer button:focus,
+#resetPasswordModal .modal-content .modal-footer button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#loginModal .modal-content .modal-footer a,
+#loginModal .modal-content .modal-footer a:hover,
+#signupModal .modal-content .modal-footer a,
+#signupModal .modal-content .modal-footer a:hover,
+#resetPasswordModal .modal-content .modal-footer a,
+#resetPasswordModal .modal-content .modal-footer a:hover {
+  color: #F4CA52;
+}
+
+#loginModal .modal-content .modal-footer .checkbox,
+#signupModal .modal-content .modal-footer .checkbox,
+#resetPasswordModal .modal-content .modal-footer .checkbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  color: #888EA6;
+}
+
+#loginModal .modal-content .modal-footer .checkbox input,
+#signupModal .modal-content .modal-footer .checkbox input,
+#resetPasswordModal .modal-content .modal-footer .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#loginModal .modal-content .modal-footer .checkmark,
+#signupModal .modal-content .modal-footer .checkmark,
+#resetPasswordModal .modal-content .modal-footer .checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ffffff;
+}
+
+#loginModal .modal-content .modal-footer .checkbox:hover input ~ .checkmark,
+#signupModal .modal-content .modal-footer .checkbox:hover input ~ .checkmark,
+#resetPasswordModal .modal-content .modal-footer .checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+#loginModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark,
+#signupModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark,
+#resetPasswordModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark {
+  background-color: #F4CA52;
+}
+
+#loginModal .modal-content .modal-footer .checkmark:after,
+#signupModal .modal-content .modal-footer .checkmark:after,
+#resetPasswordModal .modal-content .modal-footer .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  color: #46350D;
+}
+
+#loginModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark:after,
+#signupModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark:after,
+#resetPasswordModal .modal-content .modal-footer .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#loginModal .modal-content .modal-footer .checkbox .checkmark:after,
+#signupModal .modal-content .modal-footer .checkbox .checkmark:after,
+#resetPasswordModal .modal-content .modal-footer .checkbox .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid #46350D;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#loginModal .modal-content .modal-footer a,
+#signupModal .modal-content .modal-footer a,
+#resetPasswordModal .modal-content .modal-footer a {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#loginModal .modal-content .modal-footer span,
+#signupModal .modal-content .modal-footer span,
+#resetPasswordModal .modal-content .modal-footer span {
+  font-size: 14px;
+}
+
+.sidebar .userInfo {
+  background-color: rgba(9, 18, 80, 0.8);
+  margin-top: 4rem;
+}
+
+.sidebar .userInfo .diamond-border {
+  position: absolute;
+  left: 33%;
+  top: 0.8rem;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 104px;
+  height: 104px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec3f7c), color-stop(5%, red), to(#eb58f7));
+  background: linear-gradient(to top, #ec3f7c, red 5%, #eb58f7);
+}
+
+.sidebar .userInfo .diamond {
+  width: 90px;
+  height: 90px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  position: absolute;
+  left: 35%;
+  top: 1.3rem;
+}
+
+.sidebar .userInfo .userImage {
+  background: url("/images/blank-profile.png");
+  background-size: 140px 140px;
+  width: 140px;
+  height: 140px;
+  margin: -25px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sidebar .userInfo .settingsButton {
+  border-radius: 50%;
+  border: 2px solid #0F2B75;
+  background-color: #00113F;
+  position: absolute;
+  left: 53%;
+  margin-top: 30px;
+  color: #0F2B75;
+  font-size: 23px;
+}
+
+.sidebar .userInfo .settingsButton img {
+  width: 23px;
+  margin-top: -3px;
+}
+
+.sidebar .userInfo .settingsButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sidebar .userInfo .settingsButton:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.sidebar .userInfo .info .userName {
+  color: #ffffff;
+  font-size: 15px;
+  padding-top: 5.3rem;
+}
+
+.sidebar .userInfo .info .balance {
+  border-radius: 20px;
+  background-color: #0F2B75;
+}
+
+.sidebar .userInfo .info .balance .gwxLogo {
+  width: 22px;
+}
+
+.sidebar .userInfo .info .balance .eosLogo {
+  width: 17px;
+  margin-left: 3px;
+  margin-right: 2px;
+}
+
+.sidebar .userInfo .info .balance img {
+  height: 22px;
+}
+
+.sidebar .userInfo .info .balance span {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.sidebar .userInfo .info .balance button {
+  background-color: #00113F;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  right: 25px;
+  position: absolute;
+}
+
+.sidebar .userInfo .info .balance button i {
+  font-size: 13px;
+  padding: 0px 2px;
+}
+
+.sidebar .userInfo .info .balance button:hover {
+  color: #F4CA52;
+}
+
+.sidebar .userInfo .info .balance button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sidebar .userInfo .info .totalValue span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.sidebar .userInfo .info .totalValue h4 {
+  color: #F4CA52;
+}
+
+.sidebar .goldText {
+  color: #F4CA52;
+  font-weight: 700 !important;
+  background: -webkit-linear-gradient(45deg, #F4CA52, #ffffff, #F4CA52);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar .gamesDiv button {
+  background-color: rgba(9, 18, 80, 0.8);
+  width: 100%;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.sidebar .gamesDiv button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sidebar .gamesDiv button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#eb58f7), to(red));
+  background: linear-gradient(to right, #eb58f7, red);
+}
+
+.sidebar .gamesDiv .card {
+  background-color: rgba(9, 18, 80, 0.8);
+  border: none;
+}
+
+.sidebar .gamesDiv .card a,
+.sidebar .gamesDiv .card a:hover {
+  color: #ffffff;
+}
+
+.sidebar .gamesDiv .card a {
+  border-top: 1px solid #0F2B75;
+  font-size: 15px;
+}
+
+.sidebar .gamesDiv .card a:hover {
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#eb58f7), to(red));
+  background: linear-gradient(to right, #eb58f7, red);
+}
+
+.sidebar .rafflesDiv a {
+  color: #ffffff;
+}
+
+.sidebar .rafflesDiv a div {
+  background-color: rgba(9, 18, 80, 0.8);
+  width: 100%;
+}
+
+.sidebar .rafflesDiv a div .eos {
+  width: 14px;
+  height: 18px;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+.sidebar .rafflesDiv a div .gwx {
+  width: 17px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.sidebar .rafflesDiv a:hover {
+  text-decoration: none;
+}
+
+.sidebar .rafflesDiv a:hover div {
+  background: -webkit-gradient(linear, left top, right top, from(#eb58f7), to(red));
+  background: linear-gradient(to right, #eb58f7, red);
+}
+
+.sidebar .signOut a {
+  color: #ffffff;
+}
+
+.sidebar .signOut a:hover {
+  text-decoration: none;
+  color: #F4CA52;
+}
+
+.my-account-sidebar {
+  background-color: #0F2B75;
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.my-account-sidebar .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.my-account-sidebar .close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.my-account-sidebar a {
+  color: #888EA6;
+  margin-left: 1.7rem;
+}
+
+.my-account-sidebar a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.my-account-sidebar img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 24px;
+}
+
+.my-account-sidebar .incomplete {
+  border: 2px solid #E53E7C;
+  background: transparent;
+  border-radius: 5px;
+  color: #E53E7C;
+  font-weight: 600;
+  width: 100%;
+  padding: 5px;
+}
+
+.my-account-sidebar .incomplete:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.my-account-sidebar .incomplete:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.disabledContent {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+footer {
+  background: url("/images/footer/footer-bg.png") center bottom no-repeat;
+}
+
+footer small {
+  font-size: 75%;
+}
+
+footer a img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer a:hover small {
+  color: #F4CA52;
+}
+
+@media (min-width: 992px) {
+  #loginModal .modal-dialog,
+  #signupModal .modal-dialog,
+  #resetPasswordModal .modal-dialog {
+    margin: 5rem 10rem;
+  }
+
+  .my-account-sidebar {
+    margin-top: 4rem;
+    margin-left: 24.2%;
+    width: 20%;
+  }
+}
+
+@media (min-width: 601px) {
+  .navbar-nav {
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-dark .navbar-nav .signup {
+    font-size: 14px;
+  }
+
+  .navbar-dark .navbar-nav .header-logo img {
+    width: 140px;
+  }
+
+  .searchBar {
+    width: 30%;
+  }
+
+  footer a small {
+    font-size: 11.3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchBar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .sidebar .userInfo .diamond-border {
+    left: 34%;
+  }
+
+  .sidebar .userInfo .diamond {
+    left: 36%;
+  }
+}
+
+@media (max-width: 1501px) and (min-width: 1600px) {
+  .sidebar .userInfo .diamond-border {
+    left: 36%;
+  }
+
+  .sidebar .userInfo .diamond {
+    left: 38%;
+  }
+}
+
+@media (min-width: 1601px) {
+  .sidebar .userInfo .diamond-border {
+    left: 39%;
+  }
+
+  .sidebar .userInfo .diamond {
+    left: 40.5%;
+  }
+}
+

@@ -1,0 +1,537 @@
+// Variables
+@import '../variables';
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: $white;
+    font-size: 16px;
+}
+
+.white-text {
+    color: $white;
+}
+
+.yellow-text {
+    color: $gold;
+}
+
+.gray-text {
+    color: $gray;
+}
+
+.header-nav-div {
+    margin-top: 30px;
+    nav {
+        width: 100%;
+        .dropdown-menu {
+            background: $body-bg;
+            a:hover {
+                color: $white !important;
+                background: linear-gradient(to right, rgba(235, 88, 247), red);
+            }
+        }
+        .header-nav-div-2 ul {
+            list-style-type: none;
+            padding: .5rem 1rem;
+            li {
+                display: inline-block;
+            }
+        }
+        .signup {
+            border: 1px solid $gold;
+            border-radius: 5px;
+            padding: 3px 10px;
+            a {
+                color: $gold;
+            }
+        }
+        .signup:hover {
+            border: 1px solid $white;
+            cursor: pointer;
+            a {
+                color: $white !important;
+                text-decoration: none;
+            }
+        }
+        a, .header-nav-div-2 ul a {
+            color: $white;
+            font-weight: 500;
+        }
+        .header-nav-div-2 ul a:hover {
+            color: $gold;
+        }
+        .header-logo{
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+            display: block;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .navbar-dark .navbar-nav {
+        .nav-item a:hover {
+            color: $gold;
+        }
+        .nav-link {
+            color: $white;
+        }
+        .nav-link::after {
+            display: none;
+        }
+    }
+    .navbar.transparent.navbar-dark .navbar-inner {
+        border-width: 0px;
+        -webkit-box-shadow: 0px 0px;
+        box-shadow: 0px 0px;
+        background-color: rgba(0,0,0,0.0);
+        background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+        background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+        background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    }
+}
+
+.searchBar {
+    width: 20%;
+    i {
+        position: absolute;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    input {
+        width: 100%;
+        border: 1px solid blue;
+        border-radius: 20px;
+        background-color: $lighter-dark-blue;
+        color: $white;
+        padding: 10px 10px 10px 43px;
+    }
+    input::placeholder {
+        color: $white;
+        opacity: 1;
+        font-size: 14px;
+    }
+    input:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+#loginModal, #signupModal, #resetPasswordModal {
+    .modal-content {
+        background: linear-gradient(to top, $body-bg, #131B6C);
+        .modal-header {
+            border-bottom: none;
+            p {
+                color: $gold;
+                font-weight: 600;
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+            .close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 22px;
+                color: $white;
+                font-weight: 200;
+            }
+            .close:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .modal-body {
+            input {
+                width: 100%;
+                color: $white;
+                font-size: 14px;
+                background: transparent;
+                padding-bottom: 10px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid #2F3B61;
+            }
+            input:focus {
+                box-shadow: none;
+                outline: none;
+                border-bottom: 1px solid $white;
+            }
+            input::placeholder {
+                color: $gray;
+                opacity: 1;
+                font-size: 14px;
+            }
+            input.error {
+                border-bottom: 1px solid $red;
+            }
+            a {
+                font-weight: 400;
+            }
+            a:hover {
+                color: $gold;
+            }
+            .error {
+                background-color: $error-red;
+                color: $white;
+                border-radius: 3px;
+                a, a:hover {
+                    color: $gold;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .modal-footer {
+            border-top: none;
+            button {
+                background: linear-gradient(to right, #BE9834 10%, $gold);
+                color: $dark-gold;
+                width: 100%;
+                border: none;
+                font-weight: 600;
+                font-size: 19px;
+            }
+            button:hover {
+                color: $white;
+            }
+            button:focus {
+                box-shadow: none;
+                outline: none;
+            }
+            a, a:hover {
+                color: $gold;
+            }
+            .checkbox {
+                display: block;
+                position: relative;
+                padding-left: 25px;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                font-size: 14px;
+                color: $gray;
+            }
+            .checkbox input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            .checkmark {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: $white;
+            }
+            .checkbox:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            .checkbox input:checked ~ .checkmark {
+                background-color: $gold;
+            }
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                color: $dark-gold;
+            }
+            .checkbox input:checked ~ .checkmark:after {
+                display: block;
+            }
+            .checkbox .checkmark:after {
+                left: 6px;
+                top: 3px;
+                width: 6px;
+                height: 10px;
+                border: solid $dark-gold;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            a {
+                font-weight: 400;
+                font-size: 14px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sidebar {
+    .userInfo {
+        background-color: rgba(9, 18, 80, 0.8);
+        margin-top: 4rem;
+        .diamond-border {
+            position: absolute;
+            left: 33%;
+            top: 0.8rem;;
+            text-align: center;
+            transform:rotate(45deg);
+            width: 104px;
+            height: 104px;
+            background: linear-gradient(to top, rgba(236, 63, 124), red 5%, rgba(235, 88, 247));
+        }
+        .diamond {
+            width: 90px;
+            height: 90px;
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            overflow: hidden;
+            position: absolute;
+            left: 35%;
+            top: 1.3rem;
+        }
+        .userImage {
+            background: url('/images/blank-profile.png');
+            background-size: 140px 140px;
+            width: 140px;
+            height: 140px;
+            margin: -25px;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .settingsButton {
+            border-radius: 50%;
+            border: 2px solid $lighter-dark-blue;
+            background-color: $body-bg;
+            position: absolute;
+            left: 53%;
+            margin-top: 30px;
+            color: $lighter-dark-blue;
+            font-size: 23px;
+            img {
+                width: 23px;
+                margin-top: -3px;
+            }
+        }
+        .settingsButton:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .settingsButton:hover {
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+        .info {
+            .userName {
+                color: $white;
+                font-size: 15px;
+                padding-top: 5.3rem;
+            }
+            .balance {
+                border-radius: 20px;
+                background-color: $lighter-dark-blue;
+                .gwxLogo {
+                    width: 22px;
+                }
+                .eosLogo {
+                    width: 17px;
+                    margin-left: 3px;
+                    margin-right: 2px;
+                }
+                img {
+                    height: 22px;
+                }
+                span {
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                button {
+                    background-color: $body-bg;
+                    color: $white;
+                    border: none;
+                    border-radius: 50%;
+                    right: 25px;
+                    position: absolute;
+                    i {
+                        font-size: 13px;
+                        padding: 0px 2px;
+                    }
+                }
+                button:hover {
+                    color: $gold;
+                }
+                button:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            .totalValue {
+                span {
+                    color: $white;
+                    font-size: 14px;
+                }
+                h4 {
+                    color: $gold;
+                }
+            }
+        }
+    }
+    .goldText {
+        color: $gold;
+        font-weight: 700 !important;
+        background: -webkit-linear-gradient(45deg, $gold, $white, $gold);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gamesDiv {
+        button {
+            background-color: rgba(9, 18, 80, 0.8);
+            width: 100%;
+            border: none;
+            color: $white;
+            font-weight: 500;
+        }
+        button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        button:hover {
+            background: linear-gradient(to right, rgba(235, 88, 247), red);
+        }
+        .card {
+            background-color: rgba(9, 18, 80, 0.8);
+            border: none;
+            a, a:hover {
+                color: $white;
+            }
+            a {
+                border-top: 1px solid $lighter-dark-blue;
+                font-size: 15px;
+            }
+            a:hover {
+                text-decoration: none;
+                background: linear-gradient(to right, rgba(235, 88, 247), red);
+            }
+        }
+    }
+    .rafflesDiv {
+        a {
+            color: $white;
+            div {
+                background-color: rgba(9, 18, 80, 0.8);
+                width: 100%;
+                .eos {
+                    width: 14px;
+                    height: 18px;
+                    margin-left: 2px;
+                    margin-right: 5px;
+                }
+                .gwx {
+                    width: 17px;
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        a:hover {
+            text-decoration: none;
+            div {
+                background: linear-gradient(to right, rgba(235, 88, 247), red);
+            }
+        }
+    }
+    .signOut {
+        a {
+            color: $white;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $gold;
+        }
+    }
+}
+
+.my-account-sidebar {
+    background-color: $lighter-dark-blue;
+    border-radius: 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 25px;
+        color: $white;
+        font-weight: 100;
+    }
+    .close:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    a {
+        color: $gray;
+        margin-left: 1.7rem;
+    }
+    a:hover {
+        color: $white;
+        text-decoration: none;
+    }
+    img {
+        filter: brightness(0) invert(1);
+        width: 24px;
+    }
+    .incomplete {
+        border: 2px solid #E53E7C;
+        background: transparent;
+        border-radius: 5px;
+        color: #E53E7C;
+        font-weight: 600;
+        width: 100%;
+        padding: 5px;
+    }
+    .incomplete:hover {
+        color: $white;
+        border: 2px solid $white;
+    }
+    .incomplete:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.disabledContent {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+footer {
+    background: url('/images/footer/footer-bg.png') center bottom no-repeat;
+    small {
+        font-size: 75%;
+    }
+    a img {
+        filter: brightness(0) invert(1);
+    }
+    a:hover {
+        text-decoration: none;
+        small {
+            color: $gold;
+        }
+    }
+}
+
+// Responsive
+@import 'responsive';

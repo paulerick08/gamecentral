@@ -1,0 +1,93 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content .export button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834 10%, #F4CA52);
+  color: #46350D;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.content .export button img {
+  width: 18px;
+}
+
+.content .export button:hover {
+  color: #ffffff;
+}
+
+.content .export button:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.content .history .tab-content {
+  border-left: 1px solid #3448E5;
+  border-right: 1px solid #3448E5;
+  border-bottom: 1px solid #3448E5;
+  background-color: #00113F;
+}
+
+.content .history .tab-content table {
+  width: 100%;
+}
+
+.content .history .tab-content table thead th {
+  color: #F4CA52;
+  border-top: 1px solid #3448E5;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.content .history .tab-content table thead th:first-child {
+  width: 130px;
+  padding-left: 25px;
+}
+
+.content .history .tab-content table tbody {
+  color: #ffffff;
+}
+
+.content .history .tab-content table tbody tr {
+  border-top: 1px solid #3448E5;
+}
+
+.content .history .tab-content table tbody tr td:first-child {
+  width: 130px;
+  padding-left: 25px;
+}
+
+.content .history .tab-content table tbody tr td {
+  border-top: none;
+}
+
+.content .history .tab-content table tbody tr:nth-child(odd) {
+  background-color: #0D1554;
+}
+
+.content .history .tab-content table tbody tr:nth-child(even) {
+  background-color: #00113F;
+}
+
+.content .history a:hover {
+  color: #F4CA52;
+}
+
+@media (max-width: 992px) {
+  .content .history .tab-content table {
+    overflow: scroll;
+    display: block;
+  }
+}
+

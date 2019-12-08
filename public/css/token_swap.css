@@ -1,0 +1,89 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content span.instruction {
+  font-size: 15px;
+  color: #888EA6;
+}
+
+.content .bold-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.content li {
+  color: #F4CA52;
+  font-size: 18px;
+}
+
+.content li span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.content .fa-circle {
+  font-size: 8px;
+  color: #F4CA52;
+}
+
+.content input {
+  width: 50%;
+  background-color: #0F2B75;
+  border: 1px solid #3448E5;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.content button {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #BE9834), to(#F4CA52));
+  background: linear-gradient(to right, #BE9834 10%, #F4CA52);
+  color: #46350D;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 7px 10px;
+}
+
+.content button img {
+  width: 18px;
+}
+
+.content button:hover {
+  color: #ffffff;
+}
+
+.content button:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.content input:focus,
+.content button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.content a:hover {
+  color: #ffffff;
+}
+
+.content .bottomDescription {
+  line-height: 35px;
+}
+
+.content .logo {
+  position: absolute;
+  right: 29px;
+  top: 34px;
+  width: 350px;
+}
+

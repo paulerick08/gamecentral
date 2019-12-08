@@ -1,0 +1,50 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content .title h4 {
+  color: #F4CA52;
+  font-weight: 600;
+}
+
+.content label {
+  font-weight: 500;
+}
+
+.content .toggleButton input[type=radio],
+.content .toggleButton2 input[type=radio] {
+  -webkit-appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  outline: none;
+  border: 3px solid #1F2C9E;
+  cursor: pointer;
+  background-color: #0F2B75;
+}
+
+.content .toggleButton input[type=radio]:checked,
+.content .toggleButton2 input[type=radio]:checked {
+  background-color: #ffed4a;
+}
+
+.content .toggleButton span,
+.content .toggleButton2 span {
+  position: absolute;
+}
+
+.content .toggleButton img,
+.content .toggleButton2 img {
+  width: 13px;
+  top: 3px;
+}
+
+.content .toggleButton {
+  width: 90px;
+}
+
+.content .toggleButton2 {
+  width: 120px;
+}
+

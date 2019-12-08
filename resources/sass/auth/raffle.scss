@@ -1,0 +1,119 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    background-image: url('/images/auth/lady-graphics.png');
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .title {
+        h4 {
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+    .notification {
+        width: 27%;
+        margin-top: -6.5rem;
+	    border-top-left-radius: 10px;
+	    border-bottom-left-radius: 10px;
+		background-image: linear-gradient(22deg, rgba(227, 53, 47, 0.65) 10%, rgba(202, 13, 209, 0.65));
+    	img {
+    		width: 30px;
+    	}
+    	span {
+    		font-weight: 500;
+    		color: $white;
+    		position: relative;
+    		top: 14px;
+    	}
+    }
+    .countdown {
+		text-align: center;
+		margin-bottom: 70px;
+		.count-timer {
+			height: 67px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			.box {
+				height: inherit;
+				position: relative;
+				&:before {
+					content: attr(data-label);
+					position: absolute;
+					text-transform: uppercase;
+					bottom: -30px;
+					left: 0;
+					right: 0;
+					font-size: 14px;
+				}
+				span {
+					display: inline-block;
+					height: inherit;
+					background-color: #0632ab;
+					width: 70px;
+					text-align: center;
+					line-height: 70px;
+					font-size: 50px;
+					font-weight: 700;
+					font-family: $font-family-sans-serif;
+					&:first-child {
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+	h2 {
+		font-weight: 600;
+	}
+	.ratio {
+		font-weight: 500;
+		font-size: 18px;
+	}
+	.button-container {
+		background-image: linear-gradient(22deg, $red 10%, #cb0dd1);
+		border: 2px solid $white;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 25px 10px;
+		.btn {
+			background-image: linear-gradient(to right, #b99318 20%, #f7d154);
+			border: 3px solid #E2B640;
+			font-size: 25px;
+			font-weight: bold;
+			margin: 0 5px;
+			width: 82px;
+			height: 82px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $dark-gold;
+			&:not(:first-of-type) {
+				margin-left: 15px;
+			}
+		}
+	}
+	.tickets {
+		font-size: 17px;
+	}
+	.view-tickets {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.view-tickets:hover {
+		color: $white;
+		text-decoration: none;
+	}
+	.text-xsmall {
+		font-weight: 600;
+	}
+}

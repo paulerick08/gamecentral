@@ -1,0 +1,351 @@
+body {
+  background: url("/images/auth/topbg.png") no-repeat fixed top;
+  background-color: #00113F;
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.content .title {
+  background: -webkit-gradient(linear, left top, right top, from(#060E32), color-stop(50%, transparent));
+  background: linear-gradient(to right, #060E32, transparent 50%);
+}
+
+.content .title .leftBorder {
+  width: 7px;
+  background: -webkit-gradient(linear, left bottom, left top, from(red), to(#eb58f7));
+  background: linear-gradient(to top, red, #eb58f7);
+}
+
+.content .title .gwxLogo {
+  width: 22px;
+  height: 22px;
+}
+
+.content .title .eosLogo {
+  width: 17px;
+  height: 22px;
+  margin-right: 2px;
+}
+
+.content .title .fireIcon {
+  width: 17px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.content .title i {
+  font-size: 19px;
+}
+
+.content .title h6 {
+  color: #F4CA52;
+  font-weight: 700 !important;
+}
+
+.content .subContent .countdown .hours .time div,
+.content .subContent .countdown .minutes .time div,
+.content .subContent .countdown .seconds .time div {
+  background-color: #0F2B75;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 0.6;
+}
+
+.content .subContent .countdown .hours span,
+.content .subContent .countdown .minutes span,
+.content .subContent .countdown .seconds span {
+  font-size: 12px;
+}
+
+.content .subContent h6,
+.content .subContent h4 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.content .subContent button {
+  background: -webkit-gradient(linear, left top, right top, from(#ba9433), to(#F4CA52));
+  background: linear-gradient(to right, #ba9433, #F4CA52);
+  color: #46350D;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.content .subContent button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.content .subContent button:hover {
+  color: #ffffff;
+}
+
+.content .subContent .popup1,
+.content .subContent .popup2 {
+  border-radius: 4px;
+  border: none;
+  background: rgba(15, 43, 117, 0.5);
+  position: absolute;
+  top: -25px;
+}
+
+.content .subContent .popup1 span,
+.content .subContent .popup2 span {
+  line-height: 1;
+  font-size: 12px;
+}
+
+.content .subContent .popup1 span a:hover,
+.content .subContent .popup2 span a:hover {
+  color: #F4CA52;
+}
+
+.content .subContent .popup1 {
+  top: -25px;
+}
+
+.content .subContent .popup2 {
+  top: 125px;
+}
+
+.content .subContent .popup1:after,
+.content .subContent .popup2:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 18px;
+  bottom: -20px;
+  border: 10px solid;
+  border-color: rgba(15, 43, 117, 0.5) rgba(15, 43, 117, 0.5) transparent transparent;
+}
+
+.content .subContent .fa-stack {
+  cursor: pointer;
+}
+
+.content .subContent .fa-stack .fa-circle {
+  color: #0F2B75;
+}
+
+.content .subContent .fa-stack .fa-info {
+  color: #ffffff;
+}
+
+.content .subContent .fa-stack:hover .popup,
+.content .subContent .fa-stack:hover .popup:after {
+  display: block;
+}
+
+.content .subContent .fa-stack:hover .fa-circle {
+  color: #F4CA52;
+}
+
+.content .subContent .fa-stack:hover .fa-question {
+  color: #46350D;
+}
+
+.content .subContent img {
+  width: 100%;
+}
+
+.content .subContent .featured-games {
+  -webkit-box-flex: initial;
+          flex-grow: initial;
+  flex-basis: initial;
+  display: inline-block !important;
+  width: 25%;
+}
+
+.content .subContent .featured-games a:hover {
+  text-decoration: none;
+}
+
+.content .subContent .popular-games {
+  -webkit-box-flex: initial;
+          flex-grow: initial;
+  flex-basis: initial;
+  display: inline-block !important;
+  width: 20%;
+}
+
+.content .subContent .popular-games a:hover {
+  text-decoration: none;
+}
+
+.content #countdown figure,
+.content #countdown figcaption {
+  display: block;
+}
+
+.content #countdown .transition {
+  -webkit-transition: top 400ms linear;
+  transition: top 400ms linear;
+}
+
+.content #countdown .timeTo {
+  font-family: Tahoma, Verdana, Aial, sans-serif;
+  font-size: 28px;
+  line-height: 108%;
+  font-weight: bold;
+  height: 32px;
+}
+
+.content #countdown .timeTo span {
+  vertical-align: top;
+}
+
+.content #countdown .timeTo.timeTo-white div {
+  color: black;
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%, #ffffff), to(#cccccc));
+  background: linear-gradient(to bottom, #ffffff 38%, #cccccc 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cccccc",GradientType=0 );
+  /* IE6-9 */
+}
+
+.content #countdown .timeTo.timeTo-black div {
+  color: white;
+  background: #45484d;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000000));
+  background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#45484d", endColorstr="#000000",GradientType=0 );
+  /* IE6-9 */
+}
+
+.content #countdown .timeTo.timeTo-black .timeTo-alert {
+  background: #a74444;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(#a74444), color-stop(67%, #3f0000));
+  background: linear-gradient(to bottom, #a74444 0%, #3f0000 67%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a74444", endColorstr="#3f0000",GradientType=0 );
+  /* IE6-9 */
+}
+
+.content #countdown .timeTo.timeTo-white .timeTo-alert {
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #ffffff), to(#e17373));
+  background: linear-gradient(to bottom, #ffffff 35%, #e17373 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#e17373",GradientType=0 );
+  /* IE6-9 */
+}
+
+.content #countdown .timeTo figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.content #countdown .timeTo figcaption {
+  text-align: center;
+  /*font-size: 12px;*/
+  line-height: 80%;
+  font-weight: normal;
+  color: #888;
+}
+
+.content #countdown .timeTo div {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  border-top: 1px solid silver;
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+  overflow: hidden;
+}
+
+.content #countdown .timeTo div.first {
+  border-left: 1px solid silver;
+}
+
+.content #countdown .timeTo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 3px;
+}
+
+.content #countdown .timeTo ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .sidebar .userInfo .diamond-border {
+    left: 37.2%;
+    top: -3.1rem;
+  }
+
+  .sidebar .userInfo .diamond {
+    left: 39%;
+    top: -2.7rem;
+  }
+
+  .sidebar .userInfo .settingsButton {
+    left: 55%;
+  }
+
+  #rightContent {
+    padding-left: 0;
+  }
+
+  .content {
+    margin-top: 2rem;
+  }
+
+  .content .subContent .featured-games {
+    width: 50%;
+  }
+
+  .content .subContent .popular-games {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 601px) {
+  .sidebar .userInfo .diamond-border {
+    left: 32%;
+  }
+
+  .content .subContent .popular-games {
+    width: 25%;
+  }
+}
+

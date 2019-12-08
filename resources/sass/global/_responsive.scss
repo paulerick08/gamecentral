@@ -1,0 +1,85 @@
+@media(min-width: 992px) {
+    #loginModal, #signupModal, #resetPasswordModal {
+        .modal-dialog {
+            margin: 5rem 10rem;
+        }
+    }
+    .my-account-sidebar {
+        margin-top: 4rem;
+        margin-left: 24.2%;
+        width: 20%;
+    }
+}
+@media(min-width: 601px) {
+    .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media(max-width: 992px) and (min-width: 601px) {
+    .navbar-dark .navbar-nav {
+        .nav-link {
+            font-size: 14px;
+        }
+        .signup {
+            font-size: 14px;
+        }
+        .header-logo img {
+            width: 140px;
+        }
+    }
+    .searchBar {
+        width: 30%;
+    }
+    footer {
+        a small {
+            font-size: 11.3px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .searchBar {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1500px) {
+    .sidebar {
+        .userInfo {
+            .diamond-border {
+                left: 34%;
+            }
+            .diamond {
+                left: 36%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1501px) and (min-width: 1600px){
+    .sidebar {
+        .userInfo {
+            .diamond-border {
+                left: 36%;
+            }
+            .diamond {
+                left: 38%;
+            }
+        }
+    }
+}
+
+@media(min-width: 1601px) {
+    .sidebar {
+        .userInfo {
+            .diamond-border {
+                left: 39%;
+            }
+            .diamond {
+                left: 40.5%;
+            }
+        }
+    }
+}

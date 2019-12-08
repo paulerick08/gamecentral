@@ -1,0 +1,48 @@
+@media(max-width: 600px) {
+    .sidebar {
+        .userInfo {
+            .diamond-border {
+                left: 37.2%;
+                top: -3.1rem;
+            }
+            .diamond {
+                left: 39%;
+                top: -2.7rem;
+            }
+            .settingsButton {
+                left: 55%;
+            }
+        }
+    }
+    #rightContent {
+        padding-left: 0;
+    }
+    .content {
+        margin-top: 2rem;
+        .subContent {
+            .featured-games {
+                width: 50%;
+            }
+            .popular-games {
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) and (min-width: 601px) {
+    .sidebar {
+        .userInfo {
+            .diamond-border {
+                left: 32%;
+            }
+        }
+    }
+    .content {
+        .subContent {
+            .popular-games {
+                width: 25%;
+            }
+        }
+    }
+}

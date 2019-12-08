@@ -1,0 +1,158 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    margin-top: 4rem;
+    .title {
+        background: linear-gradient(to right, $dark-blue, transparent 50%);
+        .leftBorder {
+            width: 7px;
+            background: linear-gradient(to top, red, rgba(235, 88, 247));
+        }
+        .gwxLogo {
+            width: 22px;
+            height: 22px;
+        }
+        .eosLogo {
+            width: 17px;
+            height: 22px;
+            margin-right: 2px;
+        }
+        .fireIcon {
+            width: 17px;
+            height: 20px;
+            margin-right: 2px;
+        }
+        i {
+            font-size: 19px;
+        }
+        h6 {
+            color: $gold;
+        }
+    }
+    .subContent {
+        .countdown {
+            .hours, .minutes, .seconds {
+                .time div {
+                    background-color: #0C1659;
+                    padding: 10px;
+                    color: $white;
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 0.6;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        h6 {
+            color: $white;
+            font-weight: 600;
+        }
+        h4 {
+            font-size: 1.6rem !important;;
+        }
+        button {
+            background: linear-gradient(to right, rgba(186, 148, 51), $gold);
+            color: $dark-gold;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+        button:focus {
+            box-shadow: none;
+            outline: none;
+        }
+        button:hover {
+            color: $white;
+        }
+        .popup1, .popup2 {
+            border-radius: 4px;
+            border: none;
+            background: rgba(15, 43, 117, 0.5);
+            position: absolute;
+            span {
+                line-height: 1;
+                font-size: 12px;
+                a:hover {
+                    color: $gold;
+                }
+            }
+        }
+        .popup1 {
+            top: -40px;
+        }
+        .popup2 {
+            top: 120px;
+        }
+        .popup1:after, .popup2:after {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: auto;
+            right: 23px;
+            bottom: -20px;
+            border: 10px solid;
+            border-color: rgba(15, 43, 117, 0.5) rgba(15, 43, 117, 0.5) transparent transparent;
+        }
+        .fa-stack {
+            cursor: pointer;
+            .fa-circle {
+                color: $lighter-dark-blue;
+                font-size: 1.6em;
+            }
+            .question {
+                color: $white;
+                font-size: 18px;
+                position: absolute;
+                left: 9px;
+                top: -2px;
+            }
+        }
+        .fa-stack:hover {
+            .popup, .popup:after {
+                display: block;
+            }
+            .fa-circle {
+                color: $gold;
+            }
+            .question {
+                color: $dark-gold;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        .featured-games {
+            flex-grow: initial;
+            flex-basis: initial;
+            display: inline-block !important;
+            width: 25%;
+            font-weight: 500;
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .popular-games {
+            flex-grow: initial;
+            flex-basis: initial;
+            display: inline-block !important;
+            width: 20%;
+            font-weight: 500;
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Responsive
+@import 'responsive';

@@ -1,0 +1,155 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    .title {
+        h4 {
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+    .instruction {
+        font-size: 15px;
+        color: $gray;
+    }
+    input {
+        background-color: $lighter-dark-blue;
+        border: 1px solid $input-blue-border;
+        border-radius: 7px;
+        padding: 5px 10px;
+        color: $white;
+    }
+    button {
+        background: linear-gradient(to right, #BE9834 10%, $gold);
+        color: $dark-gold;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 7px 10px;
+        img {
+            width: 18px;
+        }
+    }
+    button:hover {
+        color: $white;
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+    input:focus, button:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    .logo {
+        position: absolute;
+        right: 29px;
+        top: 34px;
+        width: 350px;
+    }
+    .whiteText {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    select {
+        display: block;
+        color: $white;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 77%;
+        height: 46px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 1px solid $input-blue-border;
+        box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+        border-radius: 7px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $lighter-dark-blue;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+        cursor: pointer;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    select:focus {
+        box-shadow: none;
+        outline: none;
+    }
+    a:hover {
+        color: $white;
+    }
+    .amount {
+        width: 77%;
+    }
+    #address {
+        width: 78%;
+    }
+    .popup {
+        border-radius: 4px;
+        border: none;
+        background: rgba(15, 43, 117, 0.9);
+        position: absolute;
+        top: 22.5rem;
+        width: 45%;
+        right: 16%;
+        line-height: 16px;
+        span {
+            line-height: 1;
+            font-size: 12px;
+            a:hover {
+                color: $gold;
+            }
+        }
+    }
+    .popup:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: auto;
+        right: 12px;
+        bottom: -20px;
+        border: 10px solid;
+        border-color: rgba(15, 43, 117, 0.9) rgba(15, 43, 117, 0.9) transparent transparent;
+    }
+    .fa-stack {
+        cursor: pointer;
+        .fa-circle {
+            color: $lighter-dark-blue;
+            font-size: 1.6em;
+        }
+        .question {
+            color: $white;
+            font-size: 18px;
+            position: absolute;
+            left: 9px;
+            top: -2px;
+        }
+    }
+    .fa-stack:hover {
+        .fa-circle {
+            color: $gold;
+        }
+        .question {
+            color: $dark-gold;
+        }
+    }
+    .authenticator {
+        width: 10.8%
+    }
+    .authenticator::-webkit-outer-spin-button, .authenticator::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

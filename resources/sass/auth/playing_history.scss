@@ -1,0 +1,93 @@
+// Variables
+@import '../variables';
+
+body {
+    background: url('/images/auth/topbg.png') no-repeat fixed top;
+    background-color: $body-bg;
+}
+
+.content {
+    .title {
+        h4 {
+            color: $gold;
+            font-weight: 600;
+        }
+    }
+    .export {
+        button {
+            background: linear-gradient(to right, #BE9834 10%, $gold);
+            color: $dark-gold;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 5px;
+            padding: 10px;
+            img {
+                width: 18px;
+            }
+        }
+        button:hover {
+            color: $white;
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .history {
+        .tab-content {
+            border-left: 1px solid $input-blue-border;
+            border-right: 1px solid $input-blue-border;
+            border-bottom: 1px solid $input-blue-border;
+            background-color: $body-bg;
+            table {
+                width: 100%;
+                thead {
+                    th {
+                        color: $gold;
+                        border-top: 1px solid $input-blue-border;
+                        border-bottom: none;
+                        font-weight: 600;
+                    }
+                    th:first-child {
+                        width: 130px;
+                        padding-left: 25px;
+                    }
+                }
+                tbody {
+                    color: $white;
+                    tr {
+                        border-top: 1px solid $input-blue-border;
+                        td:first-child {
+                            width: 130px;
+                            padding-left: 25px;
+                        }
+                        td {
+                            border-top: none;
+                        }
+                    }
+                    tr:nth-child(odd) {
+                        background-color: #0D1554;
+                    }
+                    tr:nth-child(even) {
+                        background-color: $body-bg;
+                    }
+                }
+            }
+        }
+        a:hover {
+            color: $gold;
+        }
+    }
+}
+@media(max-width: 992px) {
+    .content {
+        .history {
+            .tab-content {
+                table {
+                    overflow: scroll;
+                    display: block;
+                }
+            }
+        }
+    }
+}
